@@ -2,19 +2,19 @@
 
 <p><a href="/">Go home</a></p>
 
-<h1>Update person</h1>
+<h1>Update car</h1>
 
-<form action="/person/update" method="post">
+<form action="/car/update" method="post">
     <div>
-        <label>Email: <br><input type="text" name="email" value="{{person.email}}"/> </label>
+        <label>Email: <br><input type="text" name="email" value="{{car.email}}"/> </label>
     </div>
     <div>
         <label>Password: <br><input type="password" name="password" /> </label>
     </div>
     <div>
-        <label>Age: <br><input type="number" name="age" value="{{person.age}}"/> </label>
+        <label>Age: <br><input type="number" name="make" value="{{car.make}}"/> </label>
     </div>
-    <input type="hidden" name="id" value="{{person.id}}"/>
+    <input type="hidden" name="id" value="{{car.id}}"/>
     <div style="margin-top: 8px;">
         <input type="submit" value="Save"/>
     </div>

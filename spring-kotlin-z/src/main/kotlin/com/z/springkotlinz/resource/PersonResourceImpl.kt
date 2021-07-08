@@ -37,7 +37,7 @@ class PersonResourceImpl(private val personManagementService: PersonManagementSe
     }
 
     @DeleteMapping("/{id}")
-    override fun deleteById(id: Long): ResponseEntity<Unit> {
+    override fun deleteById(@PathVariable id: Long): ResponseEntity<Unit> {
         this.personManagementService.deleteById(id)
         return ResponseEntity.noContent().build();
     }

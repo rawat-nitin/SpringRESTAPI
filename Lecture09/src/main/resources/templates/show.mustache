@@ -1,19 +1,19 @@
 {{> includes/header}}
 
 <p><a href="/">Go home</a></p>
-<p><a href="/person/show?showDeleted=true">Show all people</a></p>
-<p><a href="/person/show?showDeleted=false">Show only valid</a></p>
+<p><a href="/car/show?showDeleted=true">Show all cars</a></p>
+<p><a href="/car/show?showDeleted=false">Show only valid</a></p>
 
 
-<h1>All people</h1>
-{{#people}}
+<h1>All car</h1>
+{{#vehicle}}
     <p>
-        {{email}}, {{age}}, {{deleted}}, {{registrationTime}}<br>
-        <a href="/person/update/{{id}}">Update</a>
-        <a href="/person/delete/{{id}}">Delete</a>
-        <a href="/person/permanent-delete/{{id}}">Permanent Delete</a>
+        {{email}}, {{make}}, {{deleted}}, {{registrationTime}}<br>
+        <a href="/car/update/{{id}}">Update</a>
+        <a href="/car/delete/{{id}}">Delete</a>
+        <a href="/car/permanent-delete/{{id}}">Permanent Delete</a>
     </p>
-{{/people}}
+{{/vehicle}}
 
 <p>{{message}}</p>
 
